@@ -1,10 +1,25 @@
+.reveal {
+	background: url('./../images/DO_Logo_Vertical_Blue-75e0d68b.png') bottom 20px left 20px no-repeat;
+	background-size: 200px 127px; 
+}
+  
 .reveal .footer {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  font-size: 0.5em;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	font-size: 0.5em;
 }
 
 .reveal .small {
 	font-size: 0.5em;
 }
+
+.reveal ul
+{
+    list-style-type: none;
+}
+
+.right {
+    float: right;
+}
+
