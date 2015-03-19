@@ -55,7 +55,7 @@
 
 				<section>
 					<h2>Who am I?</h2>
-					<img src="images/piero.jpg" class="noBorder right"/>
+					<img src="images/piero.jpg" class="right"/>
 					<ul>
 						<li>Software architect <span class="reveal small">(15yrs experience)</span></li>
 						<li>Linux System Administrator <span class="reveal small">(20yrs experience)</span></li>
@@ -64,6 +64,80 @@
 						<ul>&nbsp;</ul>
 						<li>Infinite passion for Information Technology</li>
 					</ul>
+				</section>
+
+				<section>
+					<h2>Digital presence (1/2)</h2>
+					<ul>
+						<li><a href="http://www.brucalipto.org" target="_blank">Brucalipto</a></li>
+						<li><a href="http://stackoverflow.com/users/1551615/piero-ottuzzi" target="_blank">Stack Overflow</a></li>
+						<li><a href="https://careers.stackoverflow.com/ottuzzi" target="_blank">Stack Overflow Careers</a></li>
+						<li><a href="https://www.quora.com/Piero-Ottuzzi" target="_blank">Quora</a></li>
+						<li><a href="https://twitter.com/piero_at_work" target="_blank">Twitter</a></li>
+						<li><a href="https://it.linkedin.com/in/pieroottuzzi" target="_blank">Linked In</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Digital presence (2/2)</h2>
+					<ul>
+						<li>
+							<a href="https://github.com/ottuzzi" target="_blank">Github</a>
+							<ul>
+								<li><a href="https://github.com/ottuzzi/BTCBalancer" target="_blank">BTCBalancer</a>: <span class="reveal small">A portfolio rebalancing bot will buy and sell to maintain a constant asset allocation ratio of exactly 50/50</span></li>
+								<li><a href="https://github.com/ottuzzi/sqlUtil" target="_blank">sqlUtil</a>: <span class="reveal small">A simple library for accessing RDBMS</span></li>
+								<li><a href="https://github.com/ottuzzi/dode" target="_blank">dode</a>: <span class="reveal small">A presentation to get a job at Digital Ocean</span></li>
+							</ul>	
+						</li>
+						<li>
+							<a href="https://bitbucket.org/ottuzzi" target="_blank">Bitbucket</a>
+							<ul>
+								<li><a href="https://bitbucket.org/ottuzzi/gdrivecmd" target="_blank">GDriveCMD</a>: <span class="reveal small">A command line frontend for Google Drive</span></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Why am I an optimal choice?</h2>
+					<h4>Love for details! (1/2)</h4>
+					<pre><code data-trim contenteditable>
+for (int x=0; x<1000; x++)
+	for (int y=0; y<1000; y++)
+		matrix[x][y]=x*y;
+					</code></pre>
+					is way faster (10x using Java 1.8) than
+										<pre><code data-trim contenteditable>
+for (int x=0; x<1000; x++)
+	for (int y=0; y<1000; y++)
+		matrix[y][x]=x*y;
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Why am I an optimal choice?</h2>
+					<h4>Love for details! (2/2)</h4>
+					<h5>Not all singletons are equals! I use the <a href="http://en.wikipedia.org/wiki/Singleton_pattern#Initialization-on-demand_holder_idiom">SingletonHolder</a> pattern.</h5>
+										<span class="reveal small"><pre><code data-trim contenteditable>
+public class Singleton {
+	// Private constructor. Prevents instantiation from other classes.
+	private Singleton() { }
+
+	/**
+	 * Initializes singleton.
+	 *
+	 * SingletonHolder is loaded on the first execution of Singleton.getInstance()
+	 * or the first access to SingletonHolder.INSTANCE, not before.
+	 */
+	private static class SingletonHolder {
+		private static final Singleton INSTANCE = new Singleton();
+	}
+
+	public static Singleton getInstance() {
+		return SingletonHolder.INSTANCE;
+	}
+}
+					</code></pre></span>
 				</section>
 
 				<!-- Example of nested vertical slides -->
