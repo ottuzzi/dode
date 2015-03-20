@@ -19,6 +19,11 @@
     list-style-type: none;
 }
 
+.reveal ul ul
+{
+    list-style-type: none;
+}
+
 .right {
     float: right;
 }
